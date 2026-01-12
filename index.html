@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lifeline – Digital Health Assistance Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="https://cdn-icons-png.flaticon.com/512/2966/2966487.png" alt="Health Icon">
+    <h1>Lifeline</h1>
+    <p>Your Digital Health Companion</p>
+</header>
+
+<nav>
+    <button onclick="showSection('home')">Home</button>
+    <button onclick="showSection('symptoms')">Symptoms</button>
+    <button onclick="showSection('reminder')">Reminders</button>
+    <button onclick="showSection('emergency')">Emergency</button>
+</nav>
+
+<section id="home" class="active">
+    <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2966/2966327.png">
+        <h2>Welcome to Lifeline</h2>
+        <p>
+            Lifeline provides easy access to health guidance, medication reminders,
+            and emergency support through a simple and user-friendly interface.
+        </p>
+    </div>
+</section>
+
+<section id="symptoms">
+    <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/4320/4320371.png">
+        <h2>Symptom Checker</h2>
+        <select id="symptom">
+            <option value="">Select Symptom</option>
+            <option value="fever">Fever</option>
+            <option value="cough">Cough</option>
+            <option value="headache">Headache</option>
+            <option value="chest pain">Chest Pain</option>
+        </select>
+        <button class="action" onclick="checkSymptom()">Check</button>
+        <p id="symptomResult"></p>
+    </div>
+</section>
+
+<section id="reminder">
+    <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3655/3655682.png">
+        <h2>Medication Reminder</h2>
+        <input type="text" id="medicine" placeholder="Medicine Name">
+        <input type="time" id="time">
+        <button class="action" onclick="setReminder()">Set Reminder</button>
+        <p id="reminderResult"></p>
+    </div>
+</section>
+
+<section id="emergency">
+    <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1011/1011790.png">
+        <h2>Emergency Assistance</h2>
+        <p>🚑 Ambulance: <strong>108</strong></p>
+        <p>🚓 Police: <strong>100</strong></p>
+        <p>🔥 Fire: <strong>101</strong></p>
+        <button class="action" onclick="alert('Emergency alert sent!')">
+            Send Emergency Alert
+        </button>
+    </div>
+</section>
+
+<footer>
+    © 2026 Lifeline – Digital Health Assistance Platform
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
