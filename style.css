@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    margin:0;
+    background: linear-gradient(135deg,#89f7fe,#66a6ff);
+}
+
+/* Header */
+header{
+    background: linear-gradient(to right,#ff6a00,#ee0979);
+    color:white;
+    padding:25px;
+    text-align:center;
+}
+
+header img{
+    width:60px;
+}
+
+/* Navigation */
+nav{
+    background:#ffffff;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+nav button{
+    background: linear-gradient(to right,#36d1dc,#5b86e5);
+    border:none;
+    color:white;
+    padding:10px 20px;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+nav button:hover{
+    transform: scale(1.05);
+}
+
+/* Sections */
+section{
+    display:none;
+    padding:30px;
+}
+
+section.active{
+    display:block;
+}
+
+/* Cards */
+.card{
+    background:white;
+    max-width:600px;
+    margin:auto;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+    text-align:center;
+}
+
+.card img{
+    width:120px;
+    margin-bottom:15px;
+}
+
+/* Inputs */
+input,select{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    border-radius:10px;
+    border:1px solid #ccc;
+}
+
+/* Buttons */
+.action{
+    margin-top:15px;
+    background: linear-gradient(to right,#ff512f,#dd2476);
+    border:none;
+    padding:12px;
+    color:white;
+    font-size:16px;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+.action:hover{
+    opacity:0.9;
+}
+
+/* Footer */
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:10px;
+    position:fixed;
+    bottom:0;
+    width:100%;
+}
